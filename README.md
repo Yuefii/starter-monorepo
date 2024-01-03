@@ -7,9 +7,9 @@
 
 ## Tech Stack 💻
 
-- **Express JS:**[docs](https://nextjs.org)
-- **Next JS:**[docs](https://expressjs.com)
-- **Shadcn UI:**[docs](https://ui.shadcn.com)
+- **Express JS:** [docs](https://nextjs.org)
+- **Next JS:** [docs](https://expressjs.com)
+- **Shadcn UI:** [docs](https://ui.shadcn.com)
 
 ## Setup
 
@@ -45,9 +45,6 @@ pnpm start
 
 #run on 1 apps
 pnpm <workspace> <command>
-
-#more script check on :
-- [`package.json`](package.json)
 ```
 ### Format Prettier All
 
