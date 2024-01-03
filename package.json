@@ -6,6 +6,8 @@
     "web": "pnpm --filter web",
     "api": "pnpm --filter server",
     "dev": "pnpm --recursive --parallel --stream run dev",
+    "build": "pnpm --recursive --parallel --stream run build",
+    "start": "pnpm --recursive --parallel --stream run start",
     "shadcnui": "cd apps/web && pnpm dlx"
   },
   "license": "ISC",
