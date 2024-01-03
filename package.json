@@ -1,0 +1,13 @@
+{
+  "name": "starter-monorepo",
+  "version": "0.1.0",
+  "scripts": {
+    "web": "pnpm --filter web",
+    "api": "pnpm --filter server",
+    "dev": "pnpm --recursive --parallel --stream run dev"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}
