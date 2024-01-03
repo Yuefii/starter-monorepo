@@ -2,6 +2,7 @@
   "name": "starter-monorepo",
   "version": "0.1.0",
   "scripts": {
+    "format": "prettier --write .",
     "web": "pnpm --filter web",
     "api": "pnpm --filter server",
     "dev": "pnpm --recursive --parallel --stream run dev",
@@ -9,6 +10,7 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "prettier": "3.1.1",
     "typescript": "^5"
   }
 }
