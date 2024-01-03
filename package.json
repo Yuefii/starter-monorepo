@@ -4,7 +4,8 @@
   "scripts": {
     "web": "pnpm --filter web",
     "api": "pnpm --filter server",
-    "dev": "pnpm --recursive --parallel --stream run dev"
+    "dev": "pnpm --recursive --parallel --stream run dev",
+    "shadcnui": "cd apps/web && pnpm dlx"
   },
   "license": "ISC",
   "devDependencies": {

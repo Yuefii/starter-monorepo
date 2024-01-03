@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 
@@ -34,16 +35,23 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <div className="min-h-screen flex justify-center items-center">
-        {data ? (
-          <div>
-            <h1 className="text-4xl font-bold">{data.title}</h1>
-            <p className="text-lg text-center text-gray-500 py-2">
-              {data.subtitle}
-            </p>
+        <div>
+          {data ? (
+            <>
+              <h1 className="text-4xl text-primary font-bold">{data.title}</h1>
+              <p className="text-lg text-center text-gray-500 py-2">
+                {data.subtitle}
+              </p>
+            </>
+          ) : (
+            <p className="text-center text-2xl text-primary">Loading</p>
+          )}
+          <div className="flex justify-center items-center">
+            <Button onClick={() => alert("Oke get started")} size="lg">
+              Get Started
+            </Button>
           </div>
-        ) : (
-          <p className="text-center text-2xl">Loading</p>
-        )}
+        </div>
       </div>
     </>
   );
